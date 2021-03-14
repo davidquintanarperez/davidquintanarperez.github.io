@@ -1,0 +1,74 @@
+/* ========================================================================== */
+/* ================================================================ #site-nav */
+/* ========================================================================== */
+a.nav-link {
+  position: relative;
+}
+
+a.nav-link:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #64ffda;
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  width: 0;
+}
+
+a.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* ========================================================================== */
+/* ============================================================= #site-header */
+/* ========================================================================== */
+#site-header div div div {
+  padding: 10px 10px 100px 10px;
+}
+
+.social-nav-header li a {
+  font-size: 2.4rem;
+}
+
+#site-header h1 {
+  font-size: 4.7rem;
+}
+
+#site-header h2 {
+  font-size: 3.2rem;
+}
+
+#site-header p {
+  font-size: 1.7rem;
+}
+
+/* ========================================================================== */
+/* =================================================================== #about */
+/* ========================================================================== */
+#about .content-section div div:nth-child(1) div img {
+  margin-bottom: 0;
+}
+
+#about .content-section div div:nth-child(1) figure figcaption {
+  padding: 10px 0 15px 0;
+  bottom: -100px;
+  font-size: 3.1rem;
+}
+
+/* ========================================================================== */
+/* ================================================================= #contact */
+/* ========================================================================== */
+#contact div.content-section ul {
+  margin: 100px 0;
+}
+
+#contact div.content-section ul li:nth-child(2) {
+  margin: 0 50px;
+}
+
+#contact div.content-section ul li a {
+  font-size: 6rem;
+}

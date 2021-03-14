@@ -1,0 +1,497 @@
+/* ========================================================================== */
+/* =================================================================== Colors */
+/* ========================================================================== */
+/*  Palette color
+ *  Navy          #040B1D  rgba(10,25,47, 0.9)
+ *  Lightest Navy #233554  rgba(35,53,84, 0.9)
+ *  White         #e6f1ff  rgba(230,241,255, 0.9)
+ *  Green         #64ffda  rgba(100,255,218, 0.9)
+ */
+/* ========================================================================== */
+/* =================================================================== Global */
+/* ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #040B1D;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, p, a, li, figcaption, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+p, a, li, button {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: rgba(230, 241, 255, 0.4);
+}
+
+.c-green {
+  color: #64ffda;
+}
+
+/* ========================================================================== */
+/* ================================================================ #site-nav */
+/* ========================================================================== */
+#site-nav a {
+  color: rgba(230, 241, 255, 0.7);
+}
+
+#site-nav a:hover {
+  color: rgba(230, 241, 255, 0.9);
+}
+
+a.navbar-brand {
+  font-size: 2.5rem
+}
+
+a.nav-link {
+  font-size: 1.5rem;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------------------------------------- Menu Icon */
+/* ----------------------------------------------------------------------- */
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu-icon:hover .menu-bar2 {
+  width: 28px;
+}
+
+.menu-bar1, .menu-bar2, .menu-bar3 {
+  height: 3px;
+  margin: 6px 0px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.menu-bar1, .menu-bar3 {
+  width: 28px;
+  background-color: rgba(230, 241, 255, 0.9);
+}
+
+.menu-bar2 {
+  width: 20px;
+  background-color: rgba(100, 255, 218, 0.9);
+}
+
+.change-menu .menu-bar1 {
+  background-color: rgba(100, 255, 218, 0.9);
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change-menu:hover .menu-bar1 {
+  background-color: rgba(230, 241, 255, 0.7);
+}
+
+.change-menu .menu-bar2 {
+  opacity: 0;
+}
+
+.change-menu .menu-bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -6px);
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.change-menu:hover .menu-bar3 {
+  background-color: rgba(100, 255, 218, 0.9);
+}
+
+/* ========================================================================== */
+/* ============================================================= #site-header */
+/* ========================================================================== */
+#site-header {
+  height: 100vh;
+}
+
+#site-header div div {
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.social-nav-header {
+  padding: 4px 0;
+  background-color: #64ffda;
+  text-align: right;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.social-nav-header li {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.social-nav-header li a {
+  color: rgba(10, 25, 47, 0.7);
+  font-size: 1.8rem;
+}
+
+.social-nav-header li a:hover {
+  color: rgba(10, 25, 47, 1);
+}
+
+#site-header div div div {
+  -webkit-border-radius: 0 0;
+  border-radius: 0 0;
+  background-color: #233554;
+  color: rgba(230, 241, 255, 0.7);
+  padding: 10px 5px;
+  overflow: hidden;
+}
+
+#site-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 3px;
+}
+
+#site-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+
+#typed {
+  color: rgba(230, 241, 255, 1);
+}
+
+.typed-cursor {
+  color: #64ffda;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------------------------------------- .parallax */
+/* ----------------------------------------------------------------------- */
+.parallax {
+  background-image: url("../img/hero.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ========================================================================== */
+/* ================================================================== section */
+/* ========================================================================== */
+section {
+  padding-top: 60px;
+  color: rgba(230, 241, 255, 0.9);
+}
+
+.title-section {
+  margin-bottom: 30px;
+}
+
+.title-section h3 {
+  font-size: 2.5rem;
+}
+
+.title-section hr {
+  background-color: #64ffda;
+  width: 60px;
+  height: 2px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+section:nth-child(2n+1) .title-section hr {
+  float: left;
+}
+
+section:nth-child(2n+2) .title-section hr {
+  float: right;
+}
+
+section:last-child .title-section hr {
+  float: none;
+}
+
+section h4 {
+  font-size: 1.8rem;
+}
+
+.tabcontent h4 {
+  margin-bottom: 3px;
+}
+
+.tabcontent p {
+  margin-bottom: 7px;
+}
+
+.tabcontent ul {
+  margin: 0 0 15px 10px;
+}
+
+.tabcontent ul li {
+  margin-top: 2px;
+  color: rgba(230, 241, 255, 0.6);
+}
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ .tab */
+/* ----------------------------------------------------------------------- */
+.tab {
+  border-top: 1px solid rgba(100, 255, 218, 0.9);
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab button {
+  display: inline-block;
+  background-color: transparent;
+  color: rgba(230, 241, 255, 0.7);
+  padding: 22px 16px;
+  width: 32.8%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+  border-top: 2px solid transparent;
+  text-align: center;
+}
+
+.tab button:hover {
+  background-color: rgba(35, 53, 84, 0.4);
+  color: rgba(100, 255, 218, 0.9);
+}
+
+button.tab-button-active {
+  border-top: 2px solid rgba(100, 255, 218, 0.9);
+  color: rgba(100, 255, 218, 0.9);
+}
+
+.tabcontent {
+  display: none;
+  padding-left: 15px;
+}
+
+.tabcontent.tab-tabcontent-active {
+  display: block;
+}
+
+.tabcontent p {
+  /* color: rgba(230, 241, 255, 0.7); */
+}
+
+/* ========================================================================== */
+/* =================================================================== #about */
+/* ========================================================================== */
+#about .content-section div div:nth-child(1) {
+  width: 100%;
+}
+
+#about .content-section div div:nth-child(1) figure {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#about .content-section div div:nth-child(1) figure img {
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 10px;
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-filter: grayscale(10%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(10%);
+}
+
+#about .content-section div div:nth-child(1) figure:hover img {
+  -moz-transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+#about .content-section div div:nth-child(1) figure figcaption {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: rgba(230, 241, 255, 0.9);
+  background-color: rgba(35, 53, 84, 0.7);
+  padding: 10px 0 10px 0;
+  bottom: -50px;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#about .content-section div div:nth-child(1) figure:hover figcaption {
+  bottom: 0px;
+}
+
+/* ========================================================================== */
+/* ================================================================== #resume */
+/* ========================================================================== */
+#resume .content-section div:nth-child(2) {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#resume .content-section div:nth-child(2) div:nth-child(1)::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #233554;
+  border-radius: 10px;
+}
+
+#resume .content-section div:nth-child(2)::-webkit-scrollbar {
+  width: 10px;
+  background-color: #040B1D;
+}
+
+#resume .content-section div:nth-child(2)::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgba(100,255,218, 0.4)),
+      color-stop(0.72, rgba(100,255,218, 0.7)),
+      color-stop(0.86, rgba(100,255,218, 1)));
+}
+
+
+/* ========================================================================== */
+/* =================================================================== #study */
+/* ========================================================================== */
+#study .content-section div:nth-child(2) {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+#study a {
+  color: rgba(100,255,218, 0.7);
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+#study a:hover {
+  color: rgba(100,255,218, 1);
+  text-decoration: none;
+}
+
+#study .content-section div:nth-child(2) div:nth-child(3)::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #233554;
+  border-radius: 10px;
+}
+
+#study .content-section div:nth-child(2)::-webkit-scrollbar {
+  width: 10px;
+  background-color: #040B1D;
+}
+
+#study .content-section div:nth-child(2)::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgba(100,255,218, 0.4)),
+      color-stop(0.72, rgba(100,255,218, 0.7)),
+      color-stop(0.86, rgba(100,255,218, 1)));
+}
+
+/* ========================================================================== */
+/* ================================================================= #contact */
+/* ========================================================================== */
+#contact div.content-section ul li {
+  display: inline-block;
+}
+
+#contact div.content-section ul li:nth-child(2) {
+  margin: 0 10px;
+}
+
+#contact div.content-section ul li a {
+  color: #78cbc9;
+  font-size: 3rem;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+#contact div.content-section ul li a:hover {
+  color: #f6f5f5;
+}

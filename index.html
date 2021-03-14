@@ -1,284 +1,318 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="author" content="John Doe">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="DavidQP, Consultor, BI, Scala, Python, Docker">
+  <meta name="author" content="David Quintanar Pérez">
 
   <!-- Title -->
-  <title>C.V. David Quintanar</title>
+  <title>DavidQP</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./resources/css/main.css" href="/css/master.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
+
+  <!-- Tablet CSS -->
+  <link rel="stylesheet" href="./resources/css/tablet.css" type="text/css" media="(min-width: 768px)">
+
+  <!-- Desktop CSS -->
+  <link rel="stylesheet" href="./resources/css/desktop.css" type="text/css" media="(min-width: 992px)">
+
+  <!-- AnimationsSM CSS -->
+  <link rel="stylesheet" href="./resources/css/animationssm.css" type="text/css">
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
 </head>
 
 <body>
+  <!-- #site-nav -->
+  <nav id="site-nav" class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand reveal1" href="#site-header">David<span class="c-green">QP</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="menu-icon">
+        <div class="menu-bar1"></div>
+        <div class="menu-bar2"></div>
+        <div class="menu-bar3"></div>
+      </div>
+    </button>
 
-  <header id="home">
-    <div class="menu-icon-container">
-      <div class="menu-bar1"></div>
-      <div class="menu-bar2"></div>
-      <div class="menu-bar3"></div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item reveal2">
+          <a class="nav-link" href="#about"><span class="c-green">A</span>bout</a>
+        </li>
+        <li class="nav-item reveal2">
+          <a class="nav-link" href="#resume"><span class="c-green">E</span>xperiencia</a>
+        </li>
+        <li class="nav-item reveal2">
+          <a class="nav-link" href="#study"><span class="c-green">E</span>studios</a>
+        </li>
+        <li class="nav-item reveal2">
+          <a class="nav-link" href="#contact"><span class="c-green">C</span>ontacto</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <div id="home" class="parallax">
-      <div class="hero-container aos-init aos-animate" data-aos="fade-in">
-        <h1 class="digit">David Quintanar</h1>
-        <p class="reveal1"><span id="typed"></span></p>
+  <!-- #site-header -->
+  <header id="site-header" class="d-flex align-items-center parallax">
+    <div class="container d-flex justify-content-center reveal3">
+      <div>
+        <ul class="social-nav-header">
+          <li class="reveal1"><a href="https://www.hackerrank.com/davidquintanarp1" target="_blank"><i class="fab fa-hackerrank"></i></a></li>
+          <li class="reveal1"><a href="https://github.com/davidquintanarperez" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li class="reveal1"><a href="https://www.linkedin.com/in/david-quintanar-perez" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+
+        <div>
+          <h1 class="reveal4">
+            <span class="c-green">[</span>David Quintanar Pérez<span class="c-green"> ~]</span>
+          </h1>
+          <h2 class="reveal4">
+            <span class="c-green">#</span> Soy <span id="typed"></span>
+          </h2>
+          <p class="reveal4">
+            Actualmente soy Consultor BI y he logrado participar en más de 5 equipos Scrum, con ayuda de diferentes lenguajes de programación y herramientas en un ecosistema Big Data.
+          </p>
+        </div>
       </div>
     </div>
   </header>
 
-
-  <aside class="site-aside">
-    <div class="d-flex flex-column">
-      <div class="profile text-center">
-        <img src="./resources/images/david.jpg" alt="Imagen de perfil" class="rounded-circle">
-        <!-- <h1><a href="index.html">David Quintanar Pérez</a></h1> -->
-        <h1><a href="index">David Quintanar Pérez</a></h1>
-        <div class="social-menu mt-3">
-          <a href="https://mx.linkedin.com/in/david-quintanar-p%C3%A9rez-0a5134145" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/davidquintanarperez" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-
-      <nav class="site-nav-menu">
-        <ul>
-          <li id="nav-a1"><a href="#home"><i class="fas fa-home"></i> &nbsp;&nbsp;<span>Inicio</span></a></li>
-          <li id="nav-a2"><a href="#about"><i class="far fa-user"></i> &nbsp;&nbsp;&nbsp;<span>Acerca de mi</span></a></li>
-          <li id="nav-a3"><a href="#skills"><i class="fas fa-laptop-code"></i> &nbsp;<span>Habilidades</span></a></li>
-          <li id="nav-a4"><a href="#resume"><i class="far fa-file"></i> &nbsp;&nbsp;&nbsp;<span>Experiencia</span></a></li>
-          <li id="nav-a5"><a href="#study"><i class="fas fa-graduation-cap"></i> &nbsp;<span>Historia académica</span></a></li>
-          <!-- <li id="nav-a6"><a href="#testimonials"><i class="fas fa-users"></i> &nbsp;<span>Testimoniales</span></a></li> -->
-          <li id="nav-a7"><a href="#contact"><i class="far fa-envelope"></i> &nbsp;&nbsp;<span>Contacto</span></a></li>
-        </ul>
-      </nav>
-    </div>
-  </aside>
-
   <main>
-    <article class="site-article">
-
-      <section id="about">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <h2 class="digit">Acerca de mi</h2>
-              <p class="text-justify reveal1">
-                Mi objetivo primordial es formar parte de un grupo de trabajo líder y exitoso donde pueda seguir formando mis aptitudes. Del mismo
-                modo desempeñarme en el cargo de forma satisfactoria, demostrando mis conocimientos acumulados hasta el momento.
-                Comprometido siempre por mejorar para crecer conjuntamente con el desarrollo integral de una empresa.
-                Me distingo por mi colaboración en trabajo en equipo, así como estar en constante aprendizaje formando retos y compartiendo el
-                conocimento.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <h2 class="digit">Habilidades</h2>
-              <ul class="row reveal1">
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Python</li>
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Git</li>
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Jenkins</li>
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Estadística</li>
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Linux</li>
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Docker</li>
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Apache Spark</li>
-                <li class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-angle-right"></i> Otros</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="resume">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <h2 class="digit">Experiencia profecional</h2>
-            </div>
-
-            <div class="col-12 history-tl-container reveal1">
-              <ul class="tl">
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    2019 - Presente
-                  </div>
-                  <div class="item-title">/Bluetab Solutions</div>
-                  <div class="item-detail">Consultor BI</div>
-                  <ul class="resume-activity"><br>
-                    <li><i class="fas fa-angle-right"></i> Clientes como Naturgy, BBVA y Datio</li>
-                    <li><i class="fas fa-angle-right"></i> Control de incidencias, en procesos ETL sobre servisios AWS (CloudWatch, Lambda, S3 EC2)</li>
-                    <li><i class="fas fa-angle-right"></i> Procesamiento de datos con Scala Spark y Python</li>
-                    <li><i class="fas fa-angle-right"></i> Flujo de trabajo con Git</li>
-                    <li><i class="fas fa-angle-right"></i> Agile Framework</li>
-                    <li><i class="fas fa-angle-right"></i> Aplicación de reglas de calidad</li>
-                    <li><i class="fas fa-angle-right"></i> Diccionarios de datos</li>
-                    <li><i class="fas fa-angle-right"></i> Gobierno de datos</li>
-                    <li><i class="fas fa-angle-right"></i> Ingestas en plataformas de BBVA</li>
-                  </ul>
-                </li>
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    2017
-                  </div>
-                  <div class="item-title">Departamento de Redes y Soporte</div>
-                  <div class="item-detail">FES Acatlán</div>
-                  <ul class="resume-activity"><br>
-                    <li><i class="fas fa-angle-right"></i> Servicio Social</li>
-                    <li><i class="fas fa-angle-right"></i> Migrar datos</li>
-                    <li><i class="fas fa-angle-right"></i> Intalar equipo de cómputo, malware y sistemas operativos</li>
-                  </ul>
-                </li>
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    2013-2015
-                  </div>
-                  <div class="item-title">MAINBIT</div>
-                  <div class="item-detail">Soporte</div>
-                  <ul class="resume-activity"><br>
-                    <li>
-                    <li><i class="fas fa-angle-right"></i> Instalación de hardware y software</li>
-                    <li><i class="fas fa-angle-right"></i> Clonar imágenes de discos duros</li>
-                    <li><i class="fas fa-angle-right"></i> Migración de datos</li>
-                    <li><i class="fas fa-angle-right"></i> Trato con personas</li>
-                    <li><i class="fas fa-angle-right"></i> En oficinas y escuelas de la SEP y Colegio Nacional de Educación Profesional Técnica</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="study">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <h2 class="digit">Historia Académica</h2>
-            </div>
-
-            <div class="col-12 history-tl-container reveal1">
-              <ul class="tl">
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    02 de Septiembre de 2019
-                  </div>
-                  <div class="item-title"><a target="_blank" href="./resources/certified/Scrum Developer Certified -728174.pdf">SCRUM DEVELOPER CERTIFIED</a></div>
-                  <div class="item-detail">Scrum Study</div>
-                </li>
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="timestamp">
-                    2012 - 2018
-                  </div>
-                  <div class="item-title">LIC. MATEMÁTICAS APLICADAS Y COMPUTACIÓN</div>
-                  <div class="item-detail">Facultad de Estudios Superiores Acatlán</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-12 history-tl-container">
-              <h3 class="text-left digit">Cursos</h3>
-              <ul class="tl reveal1">
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="item-title"><a target="_blank" href="https://platzi.com/@davidqp/">Platzi</a></div>
-                </li>
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="item-title">Datio</div>
-                </li>
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="item-title">Udemy</div>
-                </li>
-                <li class="tl-item" ng-repeat="item in retailer_history">
-                  <div class="item-title">Accenture</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- <section id="testimonials" class="testimonial">
-        <h2 class="container digit">Testimoniales</h2>
-        <div class="container reveal1">
-          <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-
-            <div id="testimonials-principal-container" class="carousel-inner" role="listbox">
-              Testimonials
-            </div>
-            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="container">
-          <a class="effect-5 digit" href="./views/testimonials.html#testimonials-id"><span><i class="fas fa-angle-right"></i> Mas testimonios</span></a>
-        </div>
-      </section> -->
-
-      <section id="contact">
-        <div class="container">
-          <h2 class="digit">Contacto</h2>
-
-          <div class="row justify-content-around reveal1">
-            <div class="item-contact col-12 col-md-5 text-center">
-              <div class="">
-                <a href="https://mx.linkedin.com/in/david-quintanar-p%C3%A9rez-0a5134145" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/davidquintanarperez" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <div class="item-contact col-12 col-md-5 text-center">
-              <i class="fas fa-envelope"></i>
-              <p>davidquintanarperez@gmail.com</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </article>
-
-    <footer class="bg-light py-5">
-      <div class="container">
-        <div class="small text-center text-muted">Copyright © 2020 - David Quintanar Pérez</div>
+    <!-- about -->
+    <section id="about" class="container reveal4">
+      <div class="clearfix title-section">
+        <h3>Sobre mi</h3>
+        <hr>
       </div>
-    </footer>
+      <div class="content-section">
+        <div class="row d-flex justify-content-center justify-content-around">
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+            <figure>
+              <img src="./resources/img/davidqp.jpg" alt="Profile picture">
+              <figcaption>David</figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-sm-7 col-md-8 col-lg-6">
+            <p>
+              Mi objetivo primordial es formar parte de un grupo de trabajo líder y exitoso donde pueda seguir formando mis aptitudes. Del mismo modo desempeñarme en el cargo de forma satisfactoria, demostrando mis conocimientos acumulados hasta el
+              momento.
+              <br><br>
+              Comprometido siempre por mejorar para crecer conjuntamente con el desarrollo integral de una empresa. Me distingo por mi colaboración en trabajo en equipo, así como estar en constante aprendizaje formando retos y compartiendo el
+              conocimiento.
+            </p><br>
+            <ul class="row">
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Python</li>
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Jenkins</li>
+
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Estadística</li>
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Git</li>
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Linux</li>
+
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Docker</li>
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Apache Spark</li>
+              <li class="col-6 col-md-4"><i class="fas fa-angle-right c-green"></i> Otros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resume -->
+    <section id="resume" class="container reveal4">
+      <div class="clearfix title-section">
+        <h3 class="text-right">Experiencia</h3>
+        <hr>
+      </div>
+      <div class="content-section row d-flex justify-content-center align-items-start">
+        <div class="tab col-11 col-sm-10 col-md-3">
+          <button class="tab-button-active">/Bluetab Solutions</button>
+          <button>FES Acatlán</button>
+          <button>Mainbit</button>
+        </div>
+
+        <div class="col-11 col-sm-7">
+          <div id="bluetab" class="tabcontent tab-tabcontent-active">
+            <h4>Consultor BI</h4>
+            <p>2019 - Presente</p>
+            <ul style="list-style-type:disc">
+              <li>Actualmente participo en un proyecto de Ingesta en BBVA</li>
+              <ul style="list-style-type:circle">
+                <li>Analizo las necesidades de negocio</li>
+                <li>Creo diccionarios de datos</li>
+                <li>Contribuyo en proyectos con flujos de trabajo en Git y BitBucket</li>
+                <li>Realizo ingestas</li>
+                <li>Aplico reglas de calidad de la información</li>
+                <li>Ejecuto pipelies de Jenkins</li>
+                <li>Tengo contacto con equipos de negocio, gobierno de datos, QA, entre otros.</li>
+                <li>Genero mallas de Control-M</li>
+                <li>Doy seguimiento básico a ingestas productivas</li>
+              </ul>
+              <li>Adicional a mi proyecto principal</li>
+              <ul style="list-style-type:circle">
+                <li>Participo con un grupo selecto para:</li>
+                <ul style="list-style-type:square">
+                  <li>Crear contenido para pasar certificaciones</li>
+                  <li>Dar charlas y/o cursos</li>
+                  <li>Formar a profesionales</li>
+                </ul>
+                <li>He realizado entrevistas</li>
+                <li>Apoyo a compañeros con y sin experiencia en sus proyectos</li>
+                <li>Analizo errores en procesos</li>
+                <li>Doy propuestas de mejores prácticas</li>
+                <li></li>
+              </ul>
+              <li>He colaborado en proyectos de Naturgy, BBVA y DATIO</li>
+              <li>Control de incidencias, en procesos ETL sobre servicios AWS (CloudWatch, Lambda, S3 y EC2)</li>
+              <li>Gobierno de datos</li>
+              <li>Flujo de trabajo con Git</li>
+              <li>Ingestas en plataformas de BBVA</li>
+              <li>Procesamiento de datos con Scala Spark y Python</li>
+              <li>Manejo básico de archivos en HDFS</li>
+              <li>Consultas de información con PySpark y Scala Spark</li>
+              <li>Aplicación de reglas de calidad</li>
+              <li>Diccionarios de datos</li>
+              <li>Agile Framework</li>
+            </ul>
+          </div>
+
+          <div id="fes" class="tabcontent">
+            <h4>Departamento de Redes y Soporte</h4>
+            <p>2017</p>
+            <ul style="list-style-type:disc">
+              <li>Servicio Social</li>
+              <li>Migrar datos</li>
+              <li>Instalar equipo de cómputo, malware y sistemas operativos</li>
+            </ul>
+          </div>
+
+          <div id="mainbit" class="tabcontent">
+            <h4>Soporte</h4>
+            <p>2013 - 2015</p>
+            <ul style="list-style-type:disc">
+              <li>Instalación de hardware y software</li>
+              <li>Clonar imágenes de discos duros</li>
+              <li>Migración de datos</li>
+              <li>Trato con personas</li>
+              <li>En oficinas y escuelas de la SEP y Colegio Nacional de Educación Profesional Técnica</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- study -->
+    <section id="study" class="container reveal4">
+      <div class="clearfix title-section">
+        <h3>Estudios</h3>
+        <hr>
+      </div>
+      <div class="content-section row d-flex justify-content-center align-items-start">
+        <div class="tab col-11 col-sm-10 col-md-3">
+          <button class="tab-button-active">Scrum Study</button>
+          <button>UNAM</button>
+          <button>Cursos</button>
+        </div>
+
+        <div class="col-11 col-sm-7">
+          <div id="scrum" class="tabcontent tab-tabcontent-active">
+            <a href="./resources/certified/Scrum Developer Certified -728174.pdf" target="_blank">
+              <h4>SCRUM DEVELOPER CERTIFIED</h4>
+            </a>
+            <p>02 de Septiembre de 2019</p>
+            <ul style="list-style-type:disc">
+              <li>
+                Con curso y examen para certificado enfocado a Scrum, pero con temas de otros frameworks
+                como Kanban y SAFe.
+              </li>
+            </ul>
+          </div>
+
+          <div id="unam" class="tabcontent">
+            <h4>LIC. MATEMÁTICAS APLICADAS Y COMPUTACIÓN</h4>
+            <p>2012 - 2018</p>
+            <ul style="list-style-type:disc">
+              <li>
+                Universidad Nacional Autónoma de México
+              </li>
+            </ul>
+          </div>
+
+          <div id="courses" class="tabcontent">
+            <h4>Cursos</h4>
+            <p>Siempre aprendiendo</p>
+            <ul style="list-style-type:disc">
+              <li><a href="https://platzi.com/p/davidqp/" target="_blank">Platzi</a></li>
+              <ul>
+                <li>Git y GitHub</li>
+                <li>Docker</li>
+                <li>Jenkins</li>
+                <li><a href="https://platzi.com/p/davidqp/" target="_blank">...</a></li>
+              </ul>
+              <li>DATIO</li>
+              <li>Udemy</li>
+              <li>Accenture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="text-center container reveal4">
+      <div class="title-section">
+        <h3>Contacto</h3>
+        <hr>
+      </div>
+      <div class="content-section">
+        <ul>
+          <li class="reveal1"><a href="https://www.hackerrank.com/davidquintanarp1" target="_blank"><i class="fab fa-hackerrank"></i></a></li>
+          <li class="reveal1"><a href="https://www.linkedin.com/in/david-quintanar-perez" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li class="reveal1"><a href="https://github.com/davidquintanarperez" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <!-- Optional JavaScript -->
-  <!-- Google CDN jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- Typed JS -->
-  <script type="text/javascript" src="./resources/js/typed.js"></script>
-  <!-- ScrollMagic -->
-  <script src="./resources/js/ScrollMagic.min.js"></script>
-  <script src="./resources/js/debug.addIndicators.min.js"></script>
+  <!-- footer -->
+  <footer class=" py-5">
+    <div class="container">
+      <div class="text-center text-muted">
+        <p>Copyright © 2021 - David Quintanar Pérez</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
   <!-- Main JS -->
   <script src="./resources/js/main.js" type="text/javascript"></script>
-  <!-- Testimonials JS -->
-  <script src="./resources/js/testimonials.js" type="text/javascript"></script>
-  <!-- Font Awesome -->
+
+  <!-- Font Awesome 5 -->
   <script src="https://kit.fontawesome.com/8582a1eba2.js" crossorigin="anonymous"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Typed JS -->
+  <script type="text/javascript" src="./resources/js/typed.js"></script>
+
+  <!-- ScrollMagic JS -->
+  <script type="text/javascript" src="./resources/js/ScrollMagic.min.js"></script>
+
+  <!-- AnimationsSM JS -->
+  <script type="text/javascript" src="./resources/js/animationssm.js"></script>
+
 </body>
 
 </html>

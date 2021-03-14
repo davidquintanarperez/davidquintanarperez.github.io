@@ -1,22 +1,52 @@
 $(function() {
 
+  // JavaScript Use Strict
   "use strict";
 
   // ===========================================================================
-  // ================================================================= Menu Icon
+  // ================================================================ Tab active
   // ===========================================================================
-  $(".menu-icon-container").click(function() {
-    // Menu animation
-    $(".menu-icon-container").toggleClass("change-menu");
-    // Aside animation
-    $(".site-aside").toggleClass("change-aside");
+  // //////////////////////////////////////////////////////////////////// #study
+  function tabContentActiveC(button_clic) {
+    $("#study div.tab button.tab-button-active").removeClass("tab-button-active");
+    $("#study .tabcontent.tab-tabcontent-active").removeClass("tab-tabcontent-active");
+    button_clic.addClass("tab-button-active")
+  }
+
+  $("#study div.tab button").click(function() {
+    tabContentActiveC($(this))
+    if ($(this).html() === "Scrum Study") {
+      $("#scrum").addClass("tab-tabcontent-active")
+    } else if ($(this).html() === "UNAM") {
+      $("#unam").addClass("tab-tabcontent-active")
+    } else {
+      $("#courses").addClass("tab-tabcontent-active")
+    }
+  });
+
+  // /////////////////////////////////////////////////////////////////// #resume
+  function tabContentActive(button_clic) {
+    $("#resume div.tab button.tab-button-active").removeClass("tab-button-active");
+    $("#resume .tabcontent.tab-tabcontent-active").removeClass("tab-tabcontent-active");
+    button_clic.addClass("tab-button-active")
+  }
+
+  $("#resume div.tab button").click(function() {
+    tabContentActive($(this))
+    if ($(this).html() === "/Bluetab Solutions") {
+      $("#bluetab").addClass("tab-tabcontent-active")
+    } else if ($(this).html() === "FES Acatlán") {
+      $("#fes").addClass("tab-tabcontent-active")
+    } else {
+      $("#mainbit").addClass("tab-tabcontent-active")
+    }
   });
 
   // ===========================================================================
   // ================================================================== Typed JS
   // ===========================================================================
   var typed = new Typed('#typed', {
-    strings: ['Consultor BI', 'Desarrollador Python'],
+    strings: ['Consultor BI', 'Desarrollador en Python', 'Desarrollador en Scala', 'Desarrollador en Spark'],
     loop: true,
     loopCount: Infinity,
     backSpeed: 60,
@@ -24,90 +54,75 @@ $(function() {
   });
 
   // ===========================================================================
-  // ======================================================== ScrollMagic JS nav
+  // ================================================================= Menu Icon
   // ===========================================================================
-  var controller = new ScrollMagic.Controller({
-    globalSceneOptions: {
-      triggerHook: 0
+  $("button.navbar-toggler").click(function() {
+    $(".menu-icon").toggleClass("change-menu");
+  });
+
+  // ===========================================================================
+  // ===================================================================== Navar
+  // ===========================================================================
+
+  // ////////////////////////////////////////////////// Navar Validator Collapse
+  function navValidatorCollapse() {
+    if ($("#site-nav div:last-child").hasClass("show") == true) {
+      if ($("#site-nav").offset().top == 0) {
+        $("#site-nav").css("background-color", "transparent");
+      } else {
+        $("#site-nav").css("background-color", "rgba(10,25,47, 0.9)");
+      }
+    } else {
+      $("#site-nav").css("background-color", "rgba(10,25,47, 0.9)");
     }
+  }
+
+  // /////////////////////////////////////////////////////////// Navbar Collapse
+  navValidatorCollapse();
+
+  $("button.navbar-toggler").click(function() {
+    navValidatorCollapse();
   });
 
-  var scene1 = new ScrollMagic.Scene({
-      triggerElement: "#home",
-      duration: $('#home').outerHeight(true)
-    })
-    .setClassToggle("#nav-a1", "nav-a-active")
-    .addTo(controller);
-  var scene2 = new ScrollMagic.Scene({
-      triggerElement: "#about",
-      duration: $('#about').outerHeight(true)
-    })
-    .setClassToggle("#nav-a2", "nav-a-active")
-    .addTo(controller);
-  var scene3 = new ScrollMagic.Scene({
-      triggerElement: "#skills",
-      duration: $('#skills').outerHeight(true)
-    })
-    .setClassToggle("#nav-a3", "nav-a-active")
-    .addTo(controller);
-  var scene4 = new ScrollMagic.Scene({
-      triggerElement: "#resume",
-      duration: $('#resume').outerHeight(true)
-    })
-    .setClassToggle("#nav-a4", "nav-a-active")
-    .addTo(controller);
-  var scene5 = new ScrollMagic.Scene({
-      triggerElement: "#study",
-      duration: $('#study').outerHeight(true)
-    })
-    .setClassToggle("#nav-a5", "nav-a-active")
-    .addTo(controller);
-  var scene6 = new ScrollMagic.Scene({
-      triggerElement: "#testimonials",
-      duration: $('#testimonials').outerHeight(true)
-    })
-    .setClassToggle("#nav-a6", "nav-a-active")
-    .addTo(controller);
-  var scene7 = new ScrollMagic.Scene({
-      triggerElement: "#contact",
-      duration: $('#contact').outerHeight(true)
-    })
-    .setClassToggle("#nav-a7", "nav-a-active")
-    .addTo(controller);
+  // /////////////////////////////////////////////////////////// Navar Validator
+  function navValidator() {
+    if ($("#site-nav").offset().top == 0) {
+      if ($("#site-nav div:last-child").hasClass("show") == false) {
+        $("#site-nav").css("background-color", "transparent");
+      } else {
+        if ($(window).width() > 992) {
+          $("#site-nav").css("background-color", "transparent");
+        } else {
+          $("#site-nav").css("background-color", "rgba(10,25,47, 0.9)");
+        }
+      }
+    } else {
+      $("#site-nav").css("background-color", "rgba(10,25,47, 0.9)");
+    }
+  }
 
-  $(window).bind("resize", function() {
-    scene1.duration($('#home').outerHeight(true));
-    scene2.duration($('#about').outerHeight(true));
-    scene3.duration($('#skills').outerHeight(true));
-    scene4.duration($('#resume').outerHeight(true));
-    scene5.duration($('#study').outerHeight(true));
-    scene6.duration($('#testimonials').outerHeight(true));
-    scene7.duration($('#contact').outerHeight(true));
+  // ///////////////////////////////////////////////////////////// Navbar Scroll
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    $("#site-nav").css("background-color", "rgba(10,25,47, 0.9)");
+  } else {
+    $("#site-nav").css("background-color", "transparent");
+  }
+
+  window.onscroll = function() {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+      $("#site-nav").css("background-color", "rgba(10,25,47, 0.9)");
+    } else {
+      navValidator();
+    }
+  }
+
+  // ////////////////////////////////////////////////////// Navbar Window Resize
+  $(window).resize(function() {
+    navValidator();
   });
 
-  setTimeout(function() {
-    scene6.duration($('#testimonials').outerHeight(true));
-  }, 1000);
-
-  // ===========================================================================
-  // ===================================================== ScrollMagic JS Reveal
-  // ===========================================================================
-  var revealElements = document.getElementsByClassName("digit");
-  for (var i = 0; i < revealElements.length; i++) {
-    new ScrollMagic.Scene({
-        triggerElement: revealElements[i],
-        offset: -800,
-      })
-      .setClassToggle(revealElements[i], "visible")
-      .addTo(controller);
-  }
-  var revealElements = document.getElementsByClassName("reveal1");
-  for (var i = 0; i < revealElements.length; i++) {
-    new ScrollMagic.Scene({
-        triggerElement: revealElements[i],
-        offset: -800,
-      })
-      .setClassToggle(revealElements[i], "visible")
-      .addTo(controller);
-  }
 });

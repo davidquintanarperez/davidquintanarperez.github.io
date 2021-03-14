@@ -1,0 +1,208 @@
+/* ========================================================================== */
+/* ================================================================= .reveal1 */
+/* ========================================================================== */
+.reveal1 {
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out, color 0.4s ease;
+  -moz-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out, color 0.4s ease;
+  -ms-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out, color 0.4s ease;
+  -o-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out, color 0.4s ease;
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out, color 0.4s ease;
+}
+
+.reveal1.visible {
+  opacity: 1;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------------------------- #site-header - social */
+/* ----------------------------------------------------------------------- */
+#site-header div ul li.reveal1.visible {
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#site-header div ul li.reveal1.visible:nth-child(1) {
+  transition-delay: 3.5s;
+}
+
+#site-header div ul li.reveal1.visible:nth-child(2) {
+  transition-delay: 4s;
+}
+
+#site-header div ul li.reveal1.visible:nth-child(3) {
+  transition-delay: 4.5s;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------- #contact - social */
+/* ----------------------------------------------------------------------- */
+#contact div.content-section ul li.reveal1.visible {
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#contact div.content-section ul li.reveal1.visible:nth-child(1) {
+  transition-delay: 1s;
+}
+
+#contact div.content-section ul li.reveal1.visible:nth-child(2) {
+  transition-delay: 1.5s;
+}
+
+#contact div.content-section ul li.reveal1.visible:nth-child(3) {
+  transition-delay: 2s;
+}
+
+/* ========================================================================== */
+/* ================================================================= .reveal2 */
+/* ========================================================================== */
+.reveal2 {
+  opacity: 0;
+  -moz-transform: translateX(0px) translateY(-15px);
+  -webkit-transform: translateX(0px) translateY(-15px);
+  -o-transform: translateX(0px) translateY(-15px);
+  -ms-transform: translateX(0px) translateY(-15px);
+  transform: translateX(0px) translateY(-15px);
+  -webkit-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, color 0.4s ease;
+  -moz-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, color 0.4s ease;
+  -ms-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, color 0.4s ease;
+  -o-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, color 0.4s ease;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out, color 0.4s ease;
+}
+
+.reveal2.visible {
+  opacity: 1;
+  -moz-transform: translateX(0px) translateY(0px);
+  -webkit-transform: translateX(0px) translateY(0px);
+  -o-transform: translateX(0px) translateY(0px);
+  -ms-transform: translateX(0px) translateY(0px);
+  transform: translateX(0px) translateY(0px);
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------- #site-nav - li.nav-item */
+/* ----------------------------------------------------------------------- */
+li.nav-item.reveal2.visible:nth-child(1) {
+  transition-delay: 0s;
+}
+
+li.nav-item.reveal2.visible:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+li.nav-item.reveal2.visible:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+li.nav-item.reveal2.visible:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
+/* ========================================================================== */
+/* ================================================================= .reveal3 */
+/* ========================================================================== */
+.reveal3 {
+  opacity: 0;
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  -ms-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.reveal3.visible {
+  opacity: 1;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* ========================================================================== */
+/* ================================================================= .reveal4 */
+/* ========================================================================== */
+.reveal4 {
+  opacity: 0;
+  -moz-transform: translateX(0px) translateY(25px);
+  -webkit-transform: translateX(0px) translateY(25px);
+  -o-transform: translateX(0px) translateY(25px);
+  -ms-transform: translateX(0px) translateY(25px);
+  transform: translateX(0px) translateY(25px);
+  -webkit-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.reveal4.visible {
+  opacity: 1;
+  -moz-transform: translateX(0px) translateY(0px);
+  -webkit-transform: translateX(0px) translateY(0px);
+  -o-transform: translateX(0px) translateY(0px);
+  -ms-transform: translateX(0px) translateY(0px);
+  transform: translateX(0px) translateY(0px);
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------- #site-nav - li.nav-item */
+/* ----------------------------------------------------------------------- */
+#site-header div div *.reveal4.visible {
+  -webkit-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#site-header div div h1.reveal4.visible {
+  transition-delay: 1.5s;
+}
+
+#site-header div div h2.reveal4.visible {
+  transition-delay: 2s;
+}
+
+#site-header div div p.reveal4.visible {
+  transition-delay: 2.5s;
+}
+
+/* ----------------------------------------------------------------------- */
+/* --------------------------------------------------------------- section */
+/* ----------------------------------------------------------------------- */
+section.reveal4 {
+  opacity: 0;
+  -moz-transform: translateX(0px) translateY(150px);
+  -webkit-transform: translateX(0px) translateY(150px);
+  -o-transform: translateX(0px) translateY(150px);
+  -ms-transform: translateX(0px) translateY(150px);
+  transform: translateX(0px) translateY(150px);
+  -webkit-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
